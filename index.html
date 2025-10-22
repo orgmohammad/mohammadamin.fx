@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamad CFD</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- i18next CDN -->
+    <script src="https://unpkg.com/i18next@21.9.2/i18next.min.js"></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body class="font-sans bg-gray-100 text-gray-800">
+
+    <!-- هدر -->
+    <header class="bg-gray-900 text-white p-5 flex justify-between items-center">
+        <div class="text-2xl font-bold">Mohamad CFD</div>
+        <nav class="space-x-4">
+            <a href="#home" class="hover:text-green-400" data-i18n="nav.home">خانه</a>
+            <a href="#learn" class="hover:text-green-400" data-i18n="nav.learn">آموزش‌ها</a>
+            <a href="#moment" class="hover:text-green-400" data-i18n="nav.moment">لحظات ترید</a>
+            <a href="#styles" class="hover:text-green-400" data-i18n="nav.styles">سبک‌ها</a>
+            <a href="#about" class="hover:text-green-400" data-i18n="nav.about">درباره من</a>
+            <a href="#contact" class="hover:text-green-400" data-i18n="nav.contact">تماس</a>
+        </nav>
+        <!-- سوییچ زبان -->
+        <select id="languageSwitcher" class="bg-gray-700 text-white p-1 rounded">
+            <option value="fa">فارسی</option>
+            <option value="en">English</option>
+            <option value="ar">عربی</option>
+        </select>
+    </header>
+
+    <!-- بنر اصلی -->
+    <section id="home" class="bg-yellow-400 text-gray-900 text-center p-20">
+        <h1 class="text-4xl font-bold mb-4" data-i18n="home.title">سلام! من محمد هستم</h1>
+        <p class="text-xl mb-6" data-i18n="home.subtitle">آموزش حرفه‌ای ترید از مبتدی تا پیشرفته</p>
+        <a href="#learn" class="bg-green-500 text-white px-6 py-3 rounded font-bold" data-i18n="home.button">شروع یادگیری</a>
+    </section>
+
+    <!-- فوتر -->
+    <footer class="bg-gray-900 text-white text-center p-5 mt-10">
+        © 2025 Mohamad CFD. <span data-i18n="footer.rights">تمام حقوق محفوظ است.</span>
+    </footer>
+
+</body>
+</html>
